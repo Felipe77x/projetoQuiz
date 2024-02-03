@@ -1,4 +1,7 @@
 
+ RespostasCorretas = ["Rio São Francisco", "Santos Dumont", "Azul", "Tropical"]
+
+
 function quiz  (){
      
     let respostaA = prompt("Qual o maior rio do mundo ???")  
