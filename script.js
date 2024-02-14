@@ -5,7 +5,7 @@
     {
         question: "What is the capital of France?",
         options: ["Paris", "Rome", "Berlin", "Madrid"],
-        answer: "Paris"
+        answer: "Pariis"
     },
     {
         question: "What is the largest planet in our solar system?",
