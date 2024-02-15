@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz em JavaScript</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>QUIZ</h2>
-<div class="quiz-container">
-    <div class="question" id="question"></div>
-    <div class="options" id="options"></div>
-    <div class="result" id="result"></div>
-    <button onclick="nextQuestion()">Next Question</button>
-</div>
 
-<script src="script.js"></script>
+  <h2>QUIZ APP</h2>
+  <main>
+    <button id="playBtn" >Jogar</button>
+    <div class="content">
+      <span class="spnQtd"></span>
+      <span class="question"></span>
+      <div class="answers"></div>
+    </div>
+    <div class="finish">
+      <span></span>
+      <button id="restartBtn" >Reiniciar</button>
+    </div>
+  </main>
+   
+  <script src="script.js" type="module"></script>
 </body>
 </html>
+

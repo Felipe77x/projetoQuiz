@@ -1,68 +1,87 @@
+import questions from './questions.js';
+document.addEventListener('DOMContentLoaded', () => {
+  const questionElement = document.querySelector('.question');
+  const answersElement = document.querySelector('.answers');
+  const questionCountElement = document.querySelector('.spnQtd');
+  const finishMessageElement = document.querySelector('.finish span');
+  const contentElement = document.querySelector('.content');
+  const finishContentElement = document.querySelector('.finish');
+  const restartButton = document.querySelector('#restartBtn');
+  const playButton = document.querySelector('#playBtn'); // Seleciona o botão de jogar
 
- 
- 
- const quizData = [
-    {
-        question: "What is the capital of France?",
-        options: ["Paris", "Rome", "Berlin", "Madrid"],
-        answer: "Pariis"
-    },
-    {
-        question: "What is the largest planet in our solar system?",
-        options: ["Earth", "Mars", "Jupiter", "Saturn"],
-        answer: "Jupiter"
-    },
-    {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        answer: "4"
+  let currentIndex =   0;
+  let questionsCorrect =   0;
+
+  // Função para iniciar o jogo ou reiniciá-lo
+  const startOrRestartGame = () => {
+    contentElement.style.display = "flex";
+    finishContentElement.style.display = "none";
+    playButton.style.display = "none"; // Esconde o botão de jogar quando o jogo começa
+
+    currentIndex =   0;
+    questionsCorrect =   0;
+    loadQuestion();
+  };
+
+  // Função para reiniciar o jogo quando o jogador perde
+  const restartGame = () => {
+    contentElement.style.display = "flex";
+    finishContentElement.style.display = "none";
+    playButton.style.display = "none"; // Esconde o botão de jogar quando o jogo é reiniciado
+
+    currentIndex =   0;
+    questionsCorrect =   0;
+    loadQuestion();
+  };
+
+  restartButton.addEventListener('click', restartGame);
+  playButton.addEventListener('click', startOrRestartGame); // Adiciona um listener para o botão de jogar
+
+  const nextQuestionHandler = (e) => {
+    if (e.target.getAttribute("data-correct") === "true") {
+      questionsCorrect++;
     }
-];
 
-let currentQuestion = 0;
-let score = 0;
+    if (currentIndex < questions.length -   1) {
+      currentIndex++;
+      loadQuestion();
+    } else {
+      finishGame();
+    }
+  };
 
-const questionElement = document.getElementById('question');
-const optionsElement = document.getElementById('options');
-const resultElement = document.getElementById('result');
+  const finishGame = () => {
+    finishMessageElement.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}.`;
+    contentElement.style.display = "none";
+    finishContentElement.style.display = "flex";
+    playButton.style.display = "block"; // Mostra o botão de jogar quando o jogo termina
+  };
 
-function loadQuestion() {
-    const currentQuizData = quizData[currentQuestion];
-    questionElement.innerText = currentQuizData.question;
-    optionsElement.innerHTML = "";
-    currentQuizData.options.forEach(option => {
-        const button = document.createElement('button');
-        button.innerText = option;
-        button.addEventListener('click', () => checkAnswer(option));
-        optionsElement.appendChild(button);
+  const loadQuestion = () => {
+    questionCountElement.innerHTML = `${currentIndex +   1}/${questions.length}`;
+    const item = questions[currentIndex];
+    answersElement.innerHTML = "";
+    questionElement.innerHTML = item.question;
+
+    item.answers.forEach((answer) => {
+      const answerDiv = document.createElement("div");
+
+      answerDiv.innerHTML = `
+      <button class="answer" data-correct="${answer.correct}">
+        ${answer.option}
+      </button>
+      `;
+
+      answersElement.appendChild(answerDiv);
     });
-}
 
-function checkAnswer(answer) {
-    const currentQuizData = quizData[currentQuestion];
-    if (answer === currentQuizData.answer) {
-        score++;
-        resultElement.innerText = "Correct!";
-    } else {
-        resultElement.innerText = "Wrong!";
-    }
-}
-
-function nextQuestion() {
-    currentQuestion++;
-    if (currentQuestion < quizData.length) {
-        loadQuestion();
-        resultElement.innerText = "";
-    } else {
-        showResult();
-    }
-}
-
-function showResult() {
-    questionElement.innerText = "";
-    optionsElement.innerHTML = "";
-    resultElement.innerText = `You scored ${score} out of ${quizData.length}`;
-}
-
-loadQuestion();
-
+    document.querySelectorAll(".answer").forEach((answerItem) => {
+      answerItem.addEventListener("click", nextQuestionHandler);
+    });
+    
+  };
+  
+  // Inicializa o jogo
+  startOrRestartGame();
+  
+});

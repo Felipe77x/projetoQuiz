@@ -1,28 +1,107 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Body Styles */
 body {
   font-family: Arial, sans-serif;
+  background: linear-gradient(rgb(77, 14, 203), white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.quiz-container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+
+/* Question Styles */
+#question {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.question {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.options button {
-  margin: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
+/* Option Button Styles */
+#options button {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
 }
 
-.result {
-  font-size: 20px;
+#options button:hover {
+  opacity: 1;
+}
+
+/* Result Styles */
+#result {
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 2rem;
+}
+
+/* Restart Button Styles */
+#restart-Btn {
+  display: none;
+  display: inline-block;
+  padding:  0.6rem  1.5rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius:  5px;
+  cursor: pointer;
+  opacity:  0.9;
+  transition:  0.3s ease-in-out;
+  margin-bottom:  1rem; 
+}
+
+#restart-Btn:hover {
+  opacity: 1;
+}
+
+/* Play Button Styles */
+#playBtn {
+  display: inline-block;
+  padding:  0.6rem  1.5rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius:  5px;
+  cursor: pointer;
+  opacity:  0.9;
+  transition:  0.3s ease-in-out;
+  margin-bottom:  1rem; /* Espaçamento entre o botão de jogar e a questão */
+}
+
+#playBtn:hover {
+  opacity:  1;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  #question {
+    font-size: 1.2rem;
+  }
+
+  #options button {
+    font-size: 0.9rem;
+  }
+
+  #result {
+    font-size: 1.2rem;
+  }
+}
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
 }
