@@ -25,15 +25,17 @@ const q0 = {
     alternativaA : "Alternativa A",
     alternativaB : "Alternativa B",
     alternativaC : "Alternativa C",
+    alternativaD : "Alternativa D",
     correta      : "0",
 }
 
 const q1 = {
     numQuestao   : 1,
-    pergunta     : "Boreal é o mesmo que...",
+    pergunta     : "Boreal é uma coisa dklldçsknaskkdsnkdsfkndsfkndsflnkdsknldsndksfldsfnkndsfnldsf",
     alternativaA : "Sul",
     alternativaB : "Leste",
     alternativaC : "Norte",
+    alternativaD : "alterar",
     correta      : "Norte",
 }
 
@@ -43,6 +45,7 @@ const q2 = {
     alternativaA : "Oeste",
     alternativaB : "Sul",
     alternativaC : "Norte",
+    alternativaD : "alterar",
     correta      : "Sul",
 }
 
@@ -52,6 +55,7 @@ const q3 = {
     alternativaA : "Sul",
     alternativaB : "Leste",
     alternativaC : "Oeste",
+    alternativaD : "alterar",
     correta      : "Leste",
 }
 
@@ -61,6 +65,7 @@ const q4 = {
     alternativaA : "Norte",
     alternativaB : "Leste",
     alternativaC : "Oeste",
+    alternativaD : "alterar",
     correta      : "Oeste",
 }
 
@@ -70,6 +75,7 @@ const q5 = {
     alternativaA : "África",
     alternativaB : "Europa",
     alternativaC : "América",
+    alternativaD : "alterar",
     correta      : "América",
 }
 
@@ -91,11 +97,14 @@ pergunta.textContent   = q1.pergunta
 a.textContent = q1.alternativaA
 b.textContent = q1.alternativaB
 c.textContent = q1.alternativaC
+c.textContent = q1.alternativaD
+
 
 // CONFIGURAR O VALUE INICIAL DA 1a QUESTAO COMPLETA
 a.setAttribute('value', '1A')
 b.setAttribute('value', '1B')
 c.setAttribute('value', '1C')
+c.setAttribute('value', '1D')
 
 // PARA MONTAR AS PROXIMAS QUESTOES
 function proximaQuestao(nQuestao) {
@@ -105,21 +114,25 @@ function proximaQuestao(nQuestao) {
     a.textContent = questoes[nQuestao].alternativaA
     b.textContent = questoes[nQuestao].alternativaB
     c.textContent = questoes[nQuestao].alternativaC
+    d.textContent = questoes[nQuestao].alternativaD
     a.setAttribute('value', nQuestao+'A')
     b.setAttribute('value', nQuestao+'B')
     c.setAttribute('value', nQuestao+'C')
+    c.setAttribute('value', nQuestao+'D')
 }
 
 function bloquearAlternativas() {
     a.classList.add('bloqueado')
     b.classList.add('bloqueado')
     c.classList.add('bloqueado')
+    d.classList.add('bloqueado')
 }
 
 function desbloquearAlternativas() {
     a.classList.remove('bloqueado')
     b.classList.remove('bloqueado')
     c.classList.remove('bloqueado')
+    d.classList.remove('bloqueado')
 }
 
 function verificarSeAcertou(nQuestao, resposta) {
@@ -177,10 +190,13 @@ function fimDoJogo() {
     a.textContent = ""
     b.textContent = ""
     c.textContent = ""
+    d.textContent = ""
+
 
     a.setAttribute('value', '0')
     b.setAttribute('value', '0')
     c.setAttribute('value', '0')
+    d.setAttribute('value', '0')
 
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
