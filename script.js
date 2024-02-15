@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
     loadQuestion();
   };
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const startOrRestartGame = document.querySelector('#playBtn'); // Substitua #playButton pelo seletor correto para o seu botão
+    startOrRestartGame.addEventListener('click', startOrRestartGame);
+
+  });
+  
   // Função para reiniciar o jogo quando o jogador perde
   const restartGame = () => {
     contentElement.style.display = "flex";
