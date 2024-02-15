@@ -146,14 +146,22 @@ function verificarSeAcertou(nQuestao, resposta) {
     let certa = questoes[numeroDaQuestao].correta
     //console.log("RespC " + certa)
 
+    let erros =  0;
+
     if(respostaEscolhida == certa) {
-        //console.log("Acertou")
+       // console.log("Acertou")
         //respostaEsta.textContent = "Correta 😊"
-        pontos += 10 // pontos = pontos + 10
+        pontos +=  10; // pontos = pontos +  10
     } else {
-        //console.log("Errou!")
+       // console.log("Errou!")
         //respostaEsta.textContent = "Errada 😢"
+        erros++;
+        if (erros >=  1) { // Exemplo: O jogo termina após  3 erros
+            // Terminar o jogo ou mostrar uma mensagem final
+        }
+       
     }
+    
 
     // atualizar placar
     placar = pontos
