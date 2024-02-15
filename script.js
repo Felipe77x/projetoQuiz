@@ -1,7 +1,7 @@
 let titulo = document.querySelector('h1')
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')
-//let respostaEsta = document.querySelector('#respostaEsta')
+
 let pontos = 0 // pontos para o placar
 let placar = 0 // placar
 
@@ -13,6 +13,7 @@ let pergunta   = document.querySelector('#pergunta')
 let a = document.querySelector('#a')
 let b = document.querySelector('#b')
 let c = document.querySelector('#c')
+let d = document.querySelector('#d')
 
 // article com a class questoes
 let articleQuestoes = document.querySelector('.questoes')
@@ -21,63 +22,64 @@ let alternativas = document.querySelector('#alternativas')
 
 const q0 = {
     numQuestao   : 0,
-    pergunta     : "Pergunta",
-    alternativaA : "Alternativa A",
-    alternativaB : "Alternativa B",
-    alternativaC : "Alternativa C",
-    alternativaD : "Alternativa D",
-    correta      : "0",
+    pergunta     : "Qual é a cor do céu em um dia ensolarado?",
+    alternativaA : "Verde",
+    alternativaB : "Azul",
+    alternativaC : "Vermelho",
+    alternativaD : "Amarelo",
+    correta      : "Azul",
 }
 
 const q1 = {
     numQuestao   : 1,
-    pergunta     : "Boreal é uma coisa dklldçsknaskkdsnkdsfkndsfkndsflnkdsknldsndksfldsfnkndsfnldsf",
-    alternativaA : "Sul",
-    alternativaB : "Leste",
-    alternativaC : "Norte",
-    alternativaD : "alterar",
-    correta      : "Norte",
+    pergunta     : "Quantos dedos uma pessoa tem em uma mão?",
+    alternativaA : "Quatro",
+    alternativaB : "Cinco",
+    alternativaC : "Seis",
+    alternativaD : "Sete",
+    correta      : "Cinco",
 }
 
 const q2 = {
     numQuestao   : 2,
-    pergunta     : "Austral é o mesmo que...",
-    alternativaA : "Oeste",
-    alternativaB : "Sul",
-    alternativaC : "Norte",
-    alternativaD : "alterar",
-    correta      : "Sul",
+    pergunta     : "O que as plantas precisam para crescer?",
+    alternativaA : "Água e Ar",
+    alternativaB : "Fogo e Terra",
+    alternativaC : "Eletricidade e Metal",
+    alternativaD : "Óleo e Gás",
+    correta      : "Água e Ar",
 }
 
 const q3 = {
     numQuestao   : 3,
-    pergunta     : "Nascente é o mesmo que...",
-    alternativaA : "Sul",
-    alternativaB : "Leste",
-    alternativaC : "Oeste",
-    alternativaD : "alterar",
-    correta      : "Leste",
+    pergunta     : "Quantos lados tem um triângulo?",
+    alternativaA : "Quatro",
+    alternativaB : "Cinco",
+    alternativaC : "Três",
+    alternativaD : "Seis",
+    correta      : "Três",
 }
 
 const q4 = {
     numQuestao   : 4,
-    pergunta     : "Poente é o mesmo que...",
-    alternativaA : "Norte",
-    alternativaB : "Leste",
-    alternativaC : "Oeste",
-    alternativaD : "alterar",
-    correta      : "Oeste",
+    pergunta     : "O que a lagarta vira depois de se transformar?",
+    alternativaA : "Borboleta",
+    alternativaB : "Formiga",
+    alternativaC : "Besouro",
+    alternativaD : "Aranha",
+    correta      : "Borboleta",
 }
 
 const q5 = {
     numQuestao   : 5,
-    pergunta     : "O Brasil se localiza em qual continente?",
-    alternativaA : "África",
-    alternativaB : "Europa",
-    alternativaC : "América",
-    alternativaD : "alterar",
-    correta      : "América",
+    pergunta     : "Quem escreveu 'Romeu e Julieta'?",
+    alternativaA : "Charles Dickens",
+    alternativaB : "William Shakespeare",
+    alternativaC : "Jane Austen",
+    alternativaD : "Mark Twain",
+    correta      : "William Shakespeare",
 }
+
 
 // CONSTANTE COM UM ARRAY DE OBJETOS COM TODAS AS QUESTOES
 const questoes = [q0, q1, q2, q3, q4, q5]
