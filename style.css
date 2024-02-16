@@ -11,11 +11,9 @@
 
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background: rgb(12, 33, 71);
-    color: #fff;
-    
+    color: #000000; /* Garante que o texto seja legível no fundo escuro */
+    background: url('https://static.vecteezy.com/ti/vetor-gratis/p3/7258724-tv-quiz-show-com-participantes-que-respondem-perguntas-e-ganham-pontos-do-anfitriao-no-estudio-em-ilustracao-de-cartoon-vetor.jpg') repeat;
+    background-size: cover;
 }
 
 main {
@@ -55,7 +53,7 @@ h1 {
 
 #numQuestao {
     display: block;
-    background: rgb(48, 107, 107);
+    background: rgb(206, 216, 216);
     padding: 4px 10px 2px 10px;
     border-radius: 50%;
 }
@@ -80,7 +78,7 @@ h1 {
 }
 
 .questoes ol li:hover {
-    background:rgb(37, 112, 112);
+    background:rgb(206, 216, 216);
     cursor: pointer;
 }
 
@@ -106,7 +104,7 @@ h1 {
 
 
 #aviso {
-    color: rgb(37, 112, 112);
+    color: rgb(0, 0, 0);
 }
 
 /* ANIMACAO */

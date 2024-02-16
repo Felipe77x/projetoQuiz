@@ -151,13 +151,11 @@ function verificarSeAcertou(nQuestao, resposta) {
     let erros =  0;
 
     if(respostaEscolhida == certa) {
-       // console.log("Acertou")
-        //respostaEsta.texContent = "Correta 😊"
+          //respostaEsta.texContent = "Correta 😊"
         pontos +=  10; // pontos = pontos +  10
     } else {
         fimDoJogo()
-       // console.log("Errou!")
-        //respostaEsta.textContent = "Errada 😢"
+        //O jagador errou e foi para o placar de pontos 😢"
         
         erros++;
         if (erros >=  1) { // Exemplo: O jogo termina após  3 erros
