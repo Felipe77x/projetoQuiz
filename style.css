@@ -13,7 +13,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: blue;
+    background: rgb(7, 86, 150);
     color: #fff;
     
 }
@@ -55,7 +55,7 @@ h1 {
 
 #numQuestao {
     display: block;
-    background: #00b0ff;
+    background: white;
     padding: 4px 10px 2px 10px;
     border-radius: 50%;
 }
