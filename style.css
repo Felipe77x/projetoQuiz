@@ -80,7 +80,7 @@ h1 {
 }
 
 .questoes ol li:hover {
-    background:white;
+    background:black;
     cursor: pointer;
 }
 
