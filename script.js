@@ -76,7 +76,7 @@ const q5 = {
     alternativaA : "Charles Dickens",
     alternativaB : "William Shakespeare",
     alternativaC : "Jane Austen",
-    alternativaD : "Mark TwaiIIIIn",
+    alternativaD : "Mark Twain",
     correta      : "William Shakespeare",
 }
 
