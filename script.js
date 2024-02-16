@@ -53,7 +53,7 @@ const q3 = {
     numQuestao   : 3,
     pergunta     : "Nascente é o mesmo que...",
     alternativaA : "Sul",
-    alternativaB : "Leste",
+    alternativaB : "Lestée",
     alternativaC : "Oeste",
     alternativaD : "alterar",
     correta      : "Leste",
