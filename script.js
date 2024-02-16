@@ -42,7 +42,7 @@ const q1 = {
 const q2 = {
     numQuestao   : 2,
     pergunta     : "Austral é o mesmo que...",
-    alternativaA : "Oeste",
+    alternativaA : "Oestee",
     alternativaB : "Sul",
     alternativaC : "Norte",
     alternativaD : "alterar",
