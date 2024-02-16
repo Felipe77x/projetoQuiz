@@ -155,14 +155,10 @@ function verificarSeAcertou(nQuestao, resposta) {
         //respostaEsta.textContent = "Correta 😊"
         pontos +=  10; // pontos = pontos +  10
     } else {
-        
+        fimDoJogo()
        // console.log("Errou!")
         //respostaEsta.textContent = "Errada 😢"
-        erros++;
-        if (erros >=  1) { // Exemplo: O jogo termina após  3 erros
-            // Terminar o jogo ou mostrar uma mensagem final
-           
-        }
+       
        
     }
     
