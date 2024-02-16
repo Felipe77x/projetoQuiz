@@ -13,7 +13,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: rgb(37, 112, 112);
+    background: rgb(12, 33, 71);
     color: #fff;
     
 }
@@ -55,7 +55,7 @@ h1 {
 
 #numQuestao {
     display: block;
-    background: white;
+    background: rgb(48, 107, 107);
     padding: 4px 10px 2px 10px;
     border-radius: 50%;
 }
@@ -80,7 +80,7 @@ h1 {
 }
 
 .questoes ol li:hover {
-    background:aqua;
+    background:rgb(37, 112, 112);
     cursor: pointer;
 }
 
