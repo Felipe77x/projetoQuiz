@@ -99,14 +99,14 @@ pergunta.textContent   = q1.pergunta
 a.textContent = q1.alternativaA
 b.textContent = q1.alternativaB
 c.textContent = q1.alternativaC
-c.textContent = q1.alternativaD
+d.textContent = q1.alternativaD
 
 
 // CONFIGURAR O VALUE INICIAL DA 1a QUESTAO COMPLETA
 a.setAttribute('value', '1A')
 b.setAttribute('value', '1B')
 c.setAttribute('value', '1C')
-c.setAttribute('value', '1D')
+d.setAttribute('value', '1D')
 
 // PARA MONTAR AS PROXIMAS QUESTOES
 function proximaQuestao(nQuestao) {
@@ -120,7 +120,7 @@ function proximaQuestao(nQuestao) {
     a.setAttribute('value', nQuestao+'A')
     b.setAttribute('value', nQuestao+'B')
     c.setAttribute('value', nQuestao+'C')
-    c.setAttribute('value', nQuestao+'D')
+    d.setAttribute('value', nQuestao+'D')
 }
 
 function bloquearAlternativas() {
