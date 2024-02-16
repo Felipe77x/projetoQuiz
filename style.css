@@ -13,7 +13,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: rgb(7, 86, 150);
+    background: rgb(162, 188, 188);
     color: #fff;
     
 }
@@ -80,7 +80,7 @@ h1 {
 }
 
 .questoes ol li:hover {
-    background:black;
+    background:aqua;
     cursor: pointer;
 }
 
