@@ -155,6 +155,7 @@ function verificarSeAcertou(nQuestao, resposta) {
     } else {
        // console.log("Errou!")
         //respostaEsta.textContent = "Errada 😢"
+        
         erros++;
         if (erros >=  1) { // Exemplo: O jogo termina após  3 erros
             // Terminar o jogo ou mostrar uma mensagem final
@@ -174,11 +175,20 @@ function verificarSeAcertou(nQuestao, resposta) {
         //respostaEsta.textContent = '...'
         proxima = numeroDaQuestao+1
 
-        if(proxima > totalDeQuestoes) {
+        if( correta = questoes ){
+            fimDoJogo()
+        }
+
+        if (proxima > totalDeQuestoes) {
             console.log('Fim do Jogo!')
             fimDoJogo()
+
+        
+
+         
         } else {
             proximaQuestao(proxima)
+        
         }
     }, 250)
     desbloquearAlternativas()
