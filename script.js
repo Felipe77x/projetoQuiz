@@ -42,40 +42,22 @@ const q1 = {
 
 const q2 = {
     numQuestao   : 2,
-<<<<<<< HEAD
-    pergunta     : "Austral é o mesmo que...",
-    alternativaA : "Oestee",
-    alternativaB : "Sul",
-    alternativaC : "Norte",
-    alternativaD : "alterar",
-    correta      : "Sul",
-=======
     pergunta     : "O que as plantas precisam para crescer?",
     alternativaA : "Água e Ar",
     alternativaB : "Fogo e Terra",
     alternativaC : "Eletricidade e Metal",
     alternativaD : "Óleo e Gás",
     correta      : "Água e Ar",
->>>>>>> 47dcac68e3050fb99092ed2ac03c53ef7e45724d
 }
 
 const q3 = {
     numQuestao   : 3,
-<<<<<<< HEAD
-    pergunta     : "Nascente é o mesmo que...",
-    alternativaA : "Sul",
-    alternativaB : "Lestée",
-    alternativaC : "Oeste",
-    alternativaD : "alterar",
-    correta      : "Leste",
-=======
     pergunta     : "Quantos lados tem um triângulo?",
     alternativaA : "Quatro",
     alternativaB : "Cinco",
     alternativaC : "Três",
     alternativaD : "Seis",
     correta      : "Três",
->>>>>>> 47dcac68e3050fb99092ed2ac03c53ef7e45724d
 }
 
 const q4 = {
@@ -176,15 +158,11 @@ function verificarSeAcertou(nQuestao, resposta) {
         fimDoJogo()
        // console.log("Errou!")
         //respostaEsta.textContent = "Errada 😢"
-<<<<<<< HEAD
         
         erros++;
         if (erros >=  1) { // Exemplo: O jogo termina após  3 erros
             // Terminar o jogo ou mostrar uma mensagem final
         }
-=======
-       
->>>>>>> 47dcac68e3050fb99092ed2ac03c53ef7e45724d
        
     }
     
