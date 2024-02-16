@@ -13,7 +13,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: rgb(250, 4, 4));
+    background: rgb(37, 112, 112));
     color: #fff;
     
 }
@@ -80,7 +80,7 @@ h1 {
 }
 
 .questoes ol li:hover {
-    background:rgb(221, 33, 33);
+    background:aqua;
     cursor: pointer;
 }
 
@@ -106,7 +106,7 @@ h1 {
 
 
 #aviso {
-    color: #00b0ff;
+    color: rgb(37, 112, 112);
 }
 
 /* ANIMACAO */
