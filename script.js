@@ -55,7 +55,7 @@ const q3 = {
     pergunta     : "Quantos lados tem um triângulo?",
     alternativaA : "Quatro",
     alternativaB : "Cinco",
-    alternativaC : "Três",
+    alternativaC : "Trêss",
     alternativaD : "Seis",
     correta      : "Três",
 }
