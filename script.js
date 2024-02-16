@@ -81,7 +81,7 @@ const q5 = {
 
 // CONSTANTE COM UM ARRAY DE OBJETOS COM TODAS AS QUESTOES
 const questoes = [q0, q1, q2, q3, q4, q5]
-
+const respostasCorretas1 = ["América", "Oeste","Leste","Sul","0"]
 let numero = document.querySelector('#numero')
 let total  = document.querySelector('#total')
 
@@ -175,15 +175,14 @@ function verificarSeAcertou(nQuestao, resposta) {
         //respostaEsta.textContent = '...'
         proxima = numeroDaQuestao+1
 
-        if( correta = questoes ){
-            fimDoJogo()
-        }
 
+        
+     
         if (proxima > totalDeQuestoes) {
             console.log('Fim do Jogo!')
             fimDoJogo()
 
-        
+           
 
          
         } else {
@@ -194,7 +193,9 @@ function verificarSeAcertou(nQuestao, resposta) {
     desbloquearAlternativas()
 }
 
-function fimDoJogo() {
+function fimDoJogo() 
+ 
+{
     instrucoes.textContent = "Fim de Jogo!"
     numQuestao.textContent = ""
 
