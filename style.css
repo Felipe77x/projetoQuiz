@@ -55,7 +55,7 @@ h1 {
 
 #numQuestao {
     display: block;
-    background: white;
+    background: aqua;
     padding: 4px 10px 2px 10px;
     border-radius: 50%;
 }
@@ -80,7 +80,7 @@ h1 {
 }
 
 .questoes ol li:hover {
-    background: #206e92;
+    background:white;
     cursor: pointer;
 }
 
