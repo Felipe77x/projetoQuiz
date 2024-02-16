@@ -152,7 +152,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 
     if(respostaEscolhida == certa) {
        // console.log("Acertou")
-        //respostaEsta.textContent = "Correta 😊"
+        //respostaEsta.texContent = "Correta 😊"
         pontos +=  10; // pontos = pontos +  10
     } else {
         fimDoJogo()
