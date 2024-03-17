@@ -28,7 +28,7 @@ const q0 = {
     alternativaB : "Azul",
     alternativaC : "Vermelho",
     alternativaD : "Amarelo",
-    alternativasE : "NDA",
+    alternativaE : "NDA",
     correta      : "Azul",
 }
 
@@ -39,7 +39,7 @@ const q1 = {
     alternativaB : "Cinco",
     alternativaC : "Seis",
     alternativaD : "Sete",
-    alternativasE : "NDA",
+    alternativaE : "NDA",
     correta      : "Cinco",
 }
 
@@ -50,7 +50,7 @@ const q2 = {
     alternativaB : "Fogo e Terra",
     alternativaC : "Eletricidade e Metal",
     alternativaD : "Óleo e Gás",
-    alternativasE : "NDA",
+    alternativaE : "NDA",
     correta      : "Água e Ar",
 }
 
@@ -61,7 +61,7 @@ const q3 = {
     alternativaB : "Cinco",
     alternativaC : "Três",
     alternativaD : "Seis",
-    alternativasE: "NDA",
+    alternativaE: "NDA",
     correta      : "Três",
 }
 
@@ -72,7 +72,7 @@ const q4 = {
     alternativaB : "Formiga",
     alternativaC : "Besouro",
     alternativaD : "Aranha",
-    alternativasE: "NDA",
+    alternativaE: "NDA",
     correta      : "Borboleta",
 }
 
@@ -83,7 +83,7 @@ const q5 = {
     alternativaB : "William Shakespeare",
     alternativaC : "Jane Austen",
     alternativaD : "Mark Twain",
-    alternativasE: "NDA",
+    alternativaE: "NDA",
     correta      : "William Shakespeare",
 }
 
