@@ -14,6 +14,7 @@ let a = document.querySelector('#a')
 let b = document.querySelector('#b')
 let c = document.querySelector('#c')
 let d = document.querySelector('#d')
+let e = document.querySelector('#e')
 
 // article com a class questoes
 let articleQuestoes = document.querySelector('.questoes')
@@ -27,6 +28,7 @@ const q0 = {
     alternativaB : "Azul",
     alternativaC : "Vermelho",
     alternativaD : "Amarelo",
+    alternativaE : "NDA",
     correta      : "Azul",
 }
 
@@ -37,6 +39,7 @@ const q1 = {
     alternativaB : "Cinco",
     alternativaC : "Seis",
     alternativaD : "Sete",
+    alternativaE : "NDA",
     correta      : "Cinco",
 }
 
@@ -47,6 +50,7 @@ const q2 = {
     alternativaB : "Fogo e Terra",
     alternativaC : "Eletricidade e Metal",
     alternativaD : "Óleo e Gás",
+    alternativaE : "NDA",
     correta      : "Água e Ar",
 }
 
@@ -57,6 +61,7 @@ const q3 = {
     alternativaB : "Cinco",
     alternativaC : "Três",
     alternativaD : "Seis",
+    alternativaE : "NDA",
     correta      : "Três",
 }
 
@@ -67,6 +72,7 @@ const q4 = {
     alternativaB : "Formiga",
     alternativaC : "Besouro",
     alternativaD : "Aranha",
+    alternativaE : "NDA",
     correta      : "Borboleta",
 }
 
@@ -77,6 +83,7 @@ const q5 = {
     alternativaB : "William Shakespeare",
     alternativaC : "Jane Austen",
     alternativaD : "Mark Twain",
+    alternativaE : "NDA",
     correta      : "William Shakespeare",
 }
 
@@ -100,6 +107,7 @@ a.textContent = q1.alternativaA
 b.textContent = q1.alternativaB
 c.textContent = q1.alternativaC
 d.textContent = q1.alternativaD
+e.textContent = q1.alternativaE
 
 
 // CONFIGURAR O VALUE INICIAL DA 1a QUESTAO COMPLETA
@@ -107,6 +115,7 @@ a.setAttribute('value', '1A')
 b.setAttribute('value', '1B')
 c.setAttribute('value', '1C')
 d.setAttribute('value', '1D')
+e.setAttribute('value', '1E')
 
 // PARA MONTAR AS PROXIMAS QUESTOES
 function proximaQuestao(nQuestao) {
@@ -117,10 +126,12 @@ function proximaQuestao(nQuestao) {
     b.textContent = questoes[nQuestao].alternativaB
     c.textContent = questoes[nQuestao].alternativaC
     d.textContent = questoes[nQuestao].alternativaD
+    e.textContent = questoes[nQuestao].alternativaE
     a.setAttribute('value', nQuestao+'A')
     b.setAttribute('value', nQuestao+'B')
     c.setAttribute('value', nQuestao+'C')
     d.setAttribute('value', nQuestao+'D')
+    e.setAttribute('value', nQuestao+'E')
 }
 
 function bloquearAlternativas() {
@@ -128,6 +139,7 @@ function bloquearAlternativas() {
     b.classList.add('bloqueado')
     c.classList.add('bloqueado')
     d.classList.add('bloqueado')
+    e.classList.add('bloqueado')
 }
 
 function desbloquearAlternativas() {
@@ -135,6 +147,7 @@ function desbloquearAlternativas() {
     b.classList.remove('bloqueado')
     c.classList.remove('bloqueado')
     d.classList.remove('bloqueado')
+    e.classList.remove('bloqueado')
 }
 
 function verificarSeAcertou(nQuestao, resposta) {
