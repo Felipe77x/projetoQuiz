@@ -61,7 +61,11 @@ const q3 = {
     alternativaB : "Cinco",
     alternativaC : "Três",
     alternativaD : "Seis",
+<<<<<<< HEAD
     alternativaE: "NDA",
+=======
+    alternativaE : "NDA",
+>>>>>>> 153c938ba8f5b5625c6b92753c9dadcad091c2cc
     correta      : "Três",
 }
 
@@ -72,7 +76,11 @@ const q4 = {
     alternativaB : "Formiga",
     alternativaC : "Besouro",
     alternativaD : "Aranha",
+<<<<<<< HEAD
     alternativaE: "NDA",
+=======
+    alternativaE : "NDA",
+>>>>>>> 153c938ba8f5b5625c6b92753c9dadcad091c2cc
     correta      : "Borboleta",
 }
 
@@ -83,7 +91,11 @@ const q5 = {
     alternativaB : "William Shakespeare",
     alternativaC : "Jane Austen",
     alternativaD : "Mark Twain",
+<<<<<<< HEAD
     alternativaE: "NDA",
+=======
+    alternativaE : "NDA",
+>>>>>>> 153c938ba8f5b5625c6b92753c9dadcad091c2cc
     correta      : "William Shakespeare",
 }
 
